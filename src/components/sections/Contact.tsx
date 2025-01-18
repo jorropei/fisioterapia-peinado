@@ -100,7 +100,7 @@ export function Contact() {
                 <Phone className="w-6 h-6 text-[#1E2C60] mt-1" />
                 <div>
                   <h3 className="font-semibold text-[#1E2C60]">Teléfono</h3>
-                  <p className="text-gray-600">681 333 516 / 676 394 904 / 648 866 886</p>
+                  <p className="text-gray-600">614 164 215</p>
                 </div>
               </div>
 

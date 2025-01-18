@@ -62,7 +62,7 @@ export function MiddleNav() {
               </a>
               <div className="flex items-center gap-2 whitespace-nowrap text-lg">
                 <Phone className="w-5 h-5 text-white" />
-                <span className="text-white font-medium">681 333 516</span>
+                <span className="text-white font-medium">614 164 215</span>
               </div>
               <Link 
                 to="/reservar"

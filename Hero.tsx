@@ -4,9 +4,15 @@ import { Button } from '../ui/Button';
 import { TestimonialSwimlane } from './TestimonialSwimlane';
 import { MiddleNav } from '../layout/MiddleNav';
 import { Link } from 'react-router-dom';
-import { scrollToSection } from '../../utils/scrollToSection';
 
 export function Hero() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <div id="inicio" className="relative">
@@ -80,8 +86,8 @@ export function Hero() {
                   </button>
                   <Button 
                     variant="outline"
-                    className="inline-flex items-center justify-center text-lg px-8 py-4 text-white border-2 border-white hover:bg-white/10 font-semibold"
                     onClick={() => scrollToSection('servicios')}
+                    className="inline-flex items-center justify-center text-lg px-8 py-4 text-white border-2 border-white hover:bg-white/10 font-semibold"
                   >
                     Más Información
                   </Button>
@@ -122,8 +128,8 @@ export function Hero() {
                     </button>
                     <Button 
                       variant="outline"
-                      className="inline-flex items-center justify-center text-xl px-12 py-6 text-white border-2 border-white hover:bg-white/10 font-semibold"
                       onClick={() => scrollToSection('servicios')}
+                      className="inline-flex items-center justify-center text-xl px-12 py-6 text-white border-2 border-white hover:bg-white/10 font-semibold"
                     >
                       Más Información
                     </Button>
